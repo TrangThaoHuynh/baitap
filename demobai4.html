@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assest/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assest/css/demobai4.css">
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            $("#gototop").hide()
+        })
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop() >= 100)
+                    $(".menu").css({
+                        "postion":"fixed",
+                        "left": 0,
+                        "right": 0
+                    })
+                else
+                    $(".menu").css({"postion": "static"})
+            })
+        })
+    </script>
+</head>
+<body>
+    <div><a href="javascript:;" id="gototop">GO TO TOP</a></div>
+    <header class="header-main">
+        <!-- header bên trái -->
+        <div class="heder_left">
+            <img src="./assest/img/sach.png" alt="sach" width="170">
+            <h1 style="color: black;">NHÀ SÁCH XYZ</h1>
+        </div>
+        <!-- header ở giữa -->
+        <div class="header_mid" style="margin-left: 50px">
+            <div class="box">
+                <div>Liên hệ quảng cáo</div>
+                <div>Liên hệ quảng cáo</div>
+                <div>Liên hệ quảng cáo</div>
+            </div>
+        </div>
+        <!-- header bên phải -->
+        <div class="header_right">
+            <textarea cols="30" rows="1" placeholder="Tìm kiếm sách"></textarea>
+            <i class="ti-search" style="font-size: 10px; padding: 5px;"></i>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Trang chủ</a></li>
+            <li class="sub-menu">
+                <a href="#">Danh mục sách</a>
+                <ul class="menu2">
+                    <li><a href="#" class="box">Công nghệ thông tin (100)</a></li>
+                    <li><a href="#" class="box">Công nghệ sinh học (50)</a></li>
+                    <li><a href="#" class="box">Xây dựng (25)</a></li>
+                    <li><a href="#" class="box">Y học (200)</a></li>
+                    <li><a href="#" class="box">Kinh tế (75)</a></li>
+                    <li><a href="#" class="box">Giáo dục (100)</a></li>
+                    <li><a href="#" class="box">Nông nghiệp (50)</a></li>
+                    <li><a href="#" class="box">Kỹ thuật điện (50)</a></li>
+                    <li><a href="#" class="box">Tâm lý học (30)</a></li>
+                    <li><a href="#" class="box">Khác (30)</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+        <div class="container_left">
+            <h1 style="padding: 10px; text-align: center;">DANH MỤC SÁCH</h1>
+            <ul class="menu3">
+                <li><a href="#" class="box">Công nghệ thông tin (<span>100</span>)</a></li>
+                <li><a href="#" class="box">Công nghệ sinh học (<span>50</span>)</a></li>
+                <li><a href="#" class="box">Xây dựng  (<span>25</span>)</a></li>
+                <li><a href="#" class="box">Y học  (<span>200</span>)</a></li>
+                <li><a href="#" class="box">Kinh tế (<span>75</span>)</a></li>
+                <li><a href="#" class="box">Giáo dục  (<span>100</span>)</a></li>
+                <li><a href="#" class="box">Nông nghiệp  (<span>50</span>)</a></li>
+                <li><a href="#" class="box">Kỹ thuật điện  (<span>50</span>)</a></li>
+                <li><a href="#" class="box">Tâm lý học  (<span>30</span>)</a></li>
+                <li><a href="#" class="box">Khác  (<span>30</span>)</a></li>    
+            </ul>
+        </div>
+        <div class="container_right">
+            <ul class="content">
+                <li>
+                    <div>
+                        <img src="./assest/img/q1.jpg"  width="200px" height="270px">
+                        <h5>Lập trình hướng đối tượng</h5>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assest/img/phát triển.jpg"  width="200px" height="270px">
+                        <h5>Phát triển phần mền mã nguồn mở</h5>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assest/img/linus.jpg"  width="200px" height="270px">
+                        <h5>Lập trình truyền thông</h5> 
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assest/img/giáo trình lt.jpg"  width="200px" height="270px">
+                        <h5>Thuật lập trình</h5>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assest/img/bảo mật.jpg"  width="200px" height="270px">
+                        <h5>Bảo mật thông tin</h5>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assest/img/cấu trúc.jpg"  width="200px" height="270px">
+                        <h5>Cấu trúc dữ liệu và giải thuật</h5>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assest/img/máy tính.jpg"  width="200px" height="270px">
+                        <h5>Máy tính và mạng máy tính</h5>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assest/img/phan tich.jpg"  width="200px" height="270px">
+                        <h5>Phân tích và thiết kế giải thuật</h5>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assest/img/web.jpg" width="200px" height="270px">
+                        <h5>Phát triển ứng dụng web</h5>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assest/img/andoif.jpg" width="200px" height="270px">
+                        <h5>Lập trình Android</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>Nhà sách XYZ &copy 2017</footer>
+</body>
+</html>

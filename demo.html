@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assest/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            $("#showId").click(function(){
+                /*xử lý xự kiện click*/
+                 /*callback (hàm) gọi sau khi cái trước thực hiện xong*/
+                $("#ballId").fadeIn(3000, function(){
+                    // $("body").css("background-color", "blue") dùng cho 1 thuộc tỉnh cần đổi
+                    $("body").css({
+                        "backgound-color": "blue",
+                        "color":"green"
+                    })
+                })
+               
+            })
+            $("#hideId").click(function(){
+                $("#ballId").fadeOut(3000, function(){
+                    $("body").css({
+                        "backgound-color": "gold",
+                        "color":"red"
+                    })
+
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1>WELCOME TO jquery</h1>
+    <div>
+        <div>
+            <input type="button" value="show" id="showId">
+            <input type="button" value="hide" id="hideId">
+        </div>
+        <img src="./assest/img/ball.webp" alt="ball" id="ballId" width="200">
+    </div>
+</body>
+</html>

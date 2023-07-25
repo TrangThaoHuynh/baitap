@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assest/css/bai5.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div class="header_left">
+            <div style="margin-left: 10px;">
+                <img src="./assest/img/favicom.png" alt="OU"  width="70" height="70">
+                <h1 style="font-size: 10px;">THÀNH LẬP 1990</h1>
+            </div>
+            <div class="content_left">
+                <h1 style="color: white;">TRƯỜNG ĐẠI HỌC MỞ</h1>
+                <h2 style="color: white;">THÀNH PHỐ HỒ CHÍ MINH</h2>
+            </div>
+        </div>
+        <div class="header_right">
+            <h1 style="color: white;">Diễn đàn CNTT</h1>
+        </div>
+    </div>
+    <div class="container">
+        <form action="#">
+       <!-- form đăng kí gọi là register -->
+        <div class="register">
+            <div style="display: flex;
+            justify-content: center;">
+                <h1 style="margin-top: 20px; margin-bottom: 20px;"
+                >Đăng ký thành viên</h1>
+            </div>
+            <div class="d-flex">
+                <h1>Họ tên</h1>
+                <!-- thẻ input quá đài nên cần bọc 1 div để chỉnh %. thưởng dùng % tránh xét trực tiếp chỉ xét tương đối -->
+                <div class="input"> 
+                    <input type="text" placeholder="Nhập họ tên"  size="29" >
+                </div>
+            </div>
+            <div class="d-flex">
+                <h1>Quê quán</h1>
+                <div class="input">
+                    <input type="text" placeholder="Nhập quê quán" size="29" >
+                </div>
+            </div>
+            <div class="d-flex">
+                <h1>Giới tính</h1>
+                <div class="gioitinh">
+                    <div style="display: flex;
+                    align-items: center;">
+                        <input type="radio" name="check">
+                        <h4>Nam</h4>
+                    </div>
+                    <div style="display: flex;
+                    align-items: center; padding: 10px;">
+                        <input type="radio" name="check">
+                        <h4>Nữ</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex">
+                <h1>Email</h1>
+                <div class="input">
+                    <input type="text" placeholder="Nhập email" size="29" >
+                </div>
+            </div>
+            <div class="d-flex">
+                <h1>Điện thoại</h1>
+                <div class="input">
+                    <input type="text" placeholder="Nhập điện thoại" size="29" >
+                </div>
+            </div>
+            <div class="d-flex">
+                <h1>Chuyên Ngành</h1>
+                <div>
+                    <select name="" id="">
+                        <optgroup label="Chọn ngành của bạn">
+                            <option value="Công nghệ thông tin">Công nghệ thông tin</option>
+                            <option value="Hệ thống thông tin quản lý">Hệ thống thông tin quản lý</option>
+                            <option value="Khoa học máy tính">Khoa học máy tính</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="d-flex" style="justify-content: flex-end;">
+                <button style="margin-right: 5px;">Đăng ký</button>
+                <button type="reset">Nhập lại</button>
+            </div>
+        </div>
+        </form>
+    </div>
+    <div class="footer">
+        <h1>Khoa CNTT, Đại học Mở TP.HCM</h1>
+        <h1>Phòng 401 (Lầu 4), số 35 - 37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1, Thành phố Hồ Chí Minh, Việt Nam</h1>
+        <h1>Điện thoại: (84 - 8)</h1>
+        <h1>Website: <span style="color: black;">www.ou.edu.vn</span></h1>
+        <h1>Email: <span style="color: black;">fcs@ou.edu.vn</span></h1>
+    </div>
+</body>
+</html>
