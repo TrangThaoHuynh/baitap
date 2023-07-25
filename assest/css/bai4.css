@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #abd5f1;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.header{
+    justify-content: space-between;
+}
+header {
+    background-image: url(/assest/img/background-xanh-duong-18.jpg);
+}
+div > img{
+    width: 120px;;
+}
+.box > div{
+    background-color: aqua;
+    padding: 3rem 0;
+    border: 1px dashed black;
+    margin: 0.1rem;
+}
+.menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #0099FF;  
+}
+.menu > li > a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+}
+.menu > li > a:hover{
+    color: #fff;
+    background: #000099;
+}
+.sub-menu .menu{
+    position: absolute;
+}
+/* main */
+main{
+    border-right: 1px solid white;
+}
+.left{
+    width: 20%;
+    border-right: 1px solid white;
+}
+.right{
+    width: 80%;
+}
+.v-menu{
+    flex-direction: column;
+}
+/* bung thẻ a ra */
+.v-menu > li {
+    width: 100%;
+}
+.v-menu > li > a{
+    /* tô đè màu lên */
+    background: linear-gradient(#0099ff, #b4d8e8);
+    border-bottom: 1px solid white;
+}

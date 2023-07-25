@@ -1,0 +1,204 @@
+*{
+    /* reset css */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flex{
+    
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    margin-top: 5px;
+}
+ul.menu{
+    list-style-type: none;
+    display: flex;
+    background-color: #0A70A4;
+}
+.menu > li{
+    min-width: 100px;
+    text-align: center;
+    border-right: 0.5px solid white;
+}
+.menu > li > a {
+    text-decoration: none;
+    display: block; /*link sẽ phủ hết chiều rộng của thẻ*/
+    padding: 1rem 0.5rem;
+}
+.menusub{
+    display: none !important;
+    position: absolute;
+    z-index: 99;
+}
+.sub:hover .menusub{
+    display: block !important;
+}
+.menusub::after{
+    content: "";
+    border-width: 10px;
+    border-style: solid ;
+    border-color:  transparent transparent chocolate transparent;
+    position: absolute;
+    bottom: 100%;
+
+}
+.menu > li:nth-child(4){
+    border-right: 0;
+}
+/* cho 2 thẻ li cuối qua phải*/
+.menu >li:nth-last-child(2){
+    margin-left: auto;
+    border-right: 0;
+}
+.menu > li:hover{
+    background-color:#0000FF;
+}
+.header_main{
+    display: flex; /*căn ngang chữ diễn đàn CNTT*/
+    background-image: linear-gradient(#000099, #0066ff);
+    /* height: 10%; */
+    margin-top: 5px;
+}
+.header_left{
+    width: 30%;
+    display: flex;
+    font-size: 15px;
+}
+.header_right{
+    width: 70%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.header_right > h1{
+    text-shadow: 2px 3px 2px lightgreen ;
+    animation: doimau 1s infinite;
+}
+@keyframes doimau {
+    from{
+        color: white;
+    }
+    to{
+       color: gold; 
+    }
+}
+.content_left{
+    display: flex;
+    flex-direction: column; /*canh dọc*/
+    justify-content: center; /*căn chữ ra giữa theo chiều dọc*/
+    margin-left: 10px; /*cách cái logo ra*/
+}
+.content{
+    width: 70%;
+    margin: 5px auto; /*căn một cái block ra giữa*/
+}
+.subject{
+    margin-top: 5px;
+}
+.subject > h1{
+    background-color: #0066ff;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+}
+.post{
+    background-color: #72bfe9;
+    display: flex;
+    border-bottom: 1px solid white;
+}
+.col1 {
+    width: 10%;
+}
+.col2 {
+    width: 30%;
+}
+.col2 > a, span{
+    text-decoration: none;
+    color: blue;
+}
+.col3 {
+    width: 30%;
+}
+.col4 {
+    width: 30%;
+    direction: rtl; /*văn bản nhập vào đổ từ phải sang trái*/
+}
+.col{
+    padding: 1rem;
+}
+.col > img{
+    width: 100%;
+    border-radius: 50%;
+    background-color: black;
+    transition: transform  ease-in-out .5s;
+}
+.col img:hover{
+    transform: skew(-20deg);
+}
+ul , p{
+    margin: 0;
+    list-style-type: none;
+}
+.ads > div{
+    position: fixed;  
+    background: linear-gradient(#00CCFF, #0066FF);
+    text-align: center;
+    padding: 120px 30px; /*căn giữa chữ lien he quang cao*/
+    border-radius: 20px;
+}
+.ads > div > h1{
+    color: blue;
+}
+.ads_left{
+    left: 0;
+    margin: 5px 30px;
+}
+.ads_right{
+    right: 0;
+    margin: 5px 30px;
+}
+footer{
+    background-image: url(/assest/img/sat6.png);
+    background-repeat: no-repeat; /* tắt chức năng lặp lại ảnh*/
+    background-position: center right; /*vị trí của bg chính giữa qua phải*/
+    background-color: #0a6fa3;
+    padding: 1rem;
+}
+/* tootip */
+.tooltipcontent{
+    background-color: chocolate;
+    padding: 5px;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    width: 200px;
+    margin-left: -110px;
+}
+.tooltipcontent::after{
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent chocolate transparent;
+    position: absolute;
+    top: -20%;
+    right: 10%;
+    
+}
+.tooltip:hover .tooltipcontent{
+    display: block;
+}
+#gototop{
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    background-color: #00CCFF;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 10px;
+}

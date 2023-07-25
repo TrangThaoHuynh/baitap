@@ -1,0 +1,83 @@
+* {
+    margin: 0; /*hiện khoảng cách trắng trắng trên header dùng margin để làm mất nó*/
+}
+html {
+    height: 100%;
+}
+body{
+    height: 100%; /*%phụ thuộc html*/
+    background-image: url(/assest/img/woop.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#header {
+    display: flex; /*căn ngang các thành phần*/
+    background-image: linear-gradient(#000099, #0066ff);
+    height: 12%;
+    
+}
+.header_left {
+    display: flex; /*cho chữ trường đại học mở nằm ngang với icon*/
+    width: 30%;
+}
+.header_right {
+    width: 70%;
+    display: flex;
+    justify-content: center; /*căn 1 đối tượng vào giửa*/
+    align-items: center; /*theo chiều ngang*/
+}
+.header_left h1 {
+    color: white;
+}
+.content_left{
+    display: flex; /*đối tượng này đang căn ngang*/
+    flex-direction: column; /*canh dọc*/
+    justify-content: center; /*căn chữ ra giữa theo chiều dọc*/
+    margin-left: 10px; /*cách cái logo ra*/
+}
+.container { /*form d9k vào giữa*/
+    height: 72%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: #fff;
+    
+}
+.register{
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(#0000FF,#00FFFF,#33CCFF);
+    border-radius: 22px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.d-flex {
+    display: flex;
+    align-items: center; /*căn các ô như nhập họ tên ra giữa*/
+}
+.gioitinh {
+    display: flex;
+}
+.d-flex h1{
+    width: 30%;
+    font-size: 15px; /*chữ nhỏ lại*/
+    padding: 15px; /*khoảng cách giữa các dòng*/
+
+}
+.d-flex input{
+    width: 70%;
+}
+.input input {
+    width: 100%;
+    padding: 5px;
+}
+.footer {
+    height: 20%;
+    height: fit-content;
+    background-image: linear-gradient(#000099, #0066ff);
+    padding: 10px 0;
+}
+.footer h1 {
+    color: #fff;
+    font-size: 20px;
+}
